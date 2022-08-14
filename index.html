@@ -9,34 +9,39 @@
       rel="stylesheet"
       as="style"
       crossorigin
-      href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.5/dist/web/static/pretendard.css"
+      href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.5/dist/web/static/pretendard-std.css"
     />
   </head>
   <body>
-    <h1 id="nickname">Hanski (hui0518)</h1>
-    <div id="realname">한석휘(韓錫輝)</div>
-    <div id="email">
-      <a href="mailto:hanski@kaist.ac.kr">hanski@kaist.ac.kr</a>
-    </div>
+    <img id="profile" src="./images/profile.png" alt="profile" />
+    <h1 id="name">Seokhui Han</h1>
+    <a id="email" href="mailto:hanski@kaist.ac.kr">hanski@kaist.ac.kr</a>
   </body>
   <style>
     body {
-      font-family: "Pretendard";
+      font-family: "Pretendard Std";
+      display: flex;
+      flex-flow: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
     }
-    div {
-      height: 60px;
-    }
-    #nickname {
+    #name {
       font-weight: 800;
       font-size: 50px;
-    }
-    #realname {
-      font-weight: 300;
-      font-size: 40px;
+      margin: 10px 0;
     }
     #email {
       font-weight: 300;
-      font-size: 40px;
+      font-size: 30px;
+      text-decoration: none;
+    }
+    #profile {
+      width: 6rem;
+      height: 6rem;
+      border-radius: 3rem;
+      margin-top: -20px;
     }
   </style>
 </html>
