@@ -5,21 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hanski</title>
-    <link
-      rel="stylesheet"
-      as="style"
-      crossorigin
-      href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.5/dist/web/static/pretendard-std.css"
-    />
   </head>
   <body>
     <img id="profile" src="./images/profile.png" alt="profile" />
     <h1 id="name">Seokhui Han</h1>
+    <h1 id="kanji-namae">韓錫輝</h1>
     <a id="email" href="mailto:hanski@kaist.ac.kr">hanski@kaist.ac.kr</a>
   </body>
   <style>
+    @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.6/dist/web/static/pretendard-jp.css");
     body {
-      font-family: "Pretendard Std";
+      font-family: "Pretendard JP";
       display: flex;
       flex-flow: column;
       align-items: center;
@@ -42,6 +38,12 @@
       height: 6rem;
       border-radius: 3rem;
       margin-top: -20px;
+    }
+    #kanji-namae {
+      font-weight: 100;
+      font-size: 50px;
+      text-decoration: none;
+      margin-top: -10px;
     }
   </style>
 </html>
