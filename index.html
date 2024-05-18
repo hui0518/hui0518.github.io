@@ -11,12 +11,33 @@
       @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.6/dist/web/static/pretendard-jp.css");
       body {
         font-family: "Pretendard JP";
+        
+        height: 100vh;
+        margin: 0;
         display: flex;
         flex-flow: column;
         align-items: center;
         justify-content: center;
-        height: 100vh;
-        margin: 0;
+
+        background-image: url(images/background.jpg);
+        background-repeat: no-repeatf;
+        background-size: cover;
+        background-position: center, center;
+      }
+      #block {
+        /* From https://css.glass */
+        background: rgba(255, 255, 255, 0.25);
+        border-radius: 20px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.15);
+        backdrop-filter: blur(15px);
+        -webkit-backdrop-filter: blur(15px);
+        border: 1px solid rgba(255, 255, 255, 0.5);
+
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        justify-content: center;
+        padding: 30px;
       }
       #name {
         font-weight: 800;
@@ -32,7 +53,6 @@
         width: 6rem;
         height: 6rem;
         border-radius: 3rem;
-        margin-top: -20px;
       }
       #kanji-namae {
         font-weight: 100;
@@ -62,9 +82,11 @@
     </style>
   </head>
   <body>
-    <img id="profile" src="./images/profile.png" alt="profile" />
-    <h1 id="name">Seokhui Han</h1>
-    <h1 id="kanji-namae">韓錫輝</h1>
-    <a id="email" href="mailto:hanski@kaist.ac.kr">hanski@kaist.ac.kr</a>
+    <div id="block">
+      <img id="profile" src="./images/profile.png" alt="profile" />
+      <h1 id="name">Seokhui Han</h1>
+      <h1 id="kanji-namae">韓錫輝</h1>
+      <a id="email" href="mailto:hanski@kaist.ac.kr">hanski@kaist.ac.kr</a>
+    </div>
   </body>
 </html>
